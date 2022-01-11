@@ -1,0 +1,6 @@
+*.venv/
+
+tfgenv/
+**/__pycache__/
+flaskapp/__intent_managers_cache__/
+
