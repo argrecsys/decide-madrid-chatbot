@@ -31,11 +31,16 @@ Database management is used via [SQLAlchemy](https://www.sqlalchemy.org/) ORM fa
 
 Other modules are just used to distribute functionality implementation.
 
-## External libraries
-* [pydialogflow-fulfillment](https://pypi.org/project/pydialogflow-fulfillment/): Apache Software License. Webhook petitions facility
-* [SQLAlchemy](https://www.sqlalchemy.org/): Python sponsored, MIT license. Database management
-* [Flask](https://flask.palletsprojects.com/en/2.0.x/): BSD-3-Clause Source License, Pallets 2010. Server library
-
+## Main Dependencies
+- [pydialogflow-fulfillment 0.1.4](https://pypi.org/project/pydialogflow-fulfillment/): Apache Software License. Webhook petitions facility
+- [SQLAlchemy 1.4.21](https://www.sqlalchemy.org/): Python sponsored, MIT license. Database management
+- [Flask 2.0.1](https://flask.palletsprojects.com/en/2.0.x/): BSD-3-Clause Source License, Pallets 2010. Server library
+## Other dependencies
+- Flask SQLAlchemy 2.5.1
+- Gunicorn 20.1.0
+- Psycopg2 2.8.6
+- Python YAML 6.0
+ 
 ## Authors
 Created on Dec 31, 2021  
 Created by:
