@@ -44,7 +44,7 @@ Other modules are just used to distribute functionality implementation.
 ## Authors
 Created on Dec 31, 2021  
 Created by:
-- <a href="#" target="_blank">Andrés Holgado-Sánchez</a>
+- <a href="https://github.com/andresh26-uam" target="_blank">Andrés Holgado-Sánchez</a>
 
 ## License
 This project is licensed under the terms of the <a href="https://github.com/argrecsys/decide-madrid-chatbot/blob/main/LICENSE">Apache License 2.0</a>.
