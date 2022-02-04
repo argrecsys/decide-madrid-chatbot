@@ -4,16 +4,21 @@
 ![license](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
 
 Chatbot of the [Decide Madrid](https://decide.madrid.es/) 2019 system. This version was used in the [DGO.2022 conference](https://dgsociety.org/dgo-2022/).
-
+## Running examples
+### On proposal searching and comments:
+![Help and proposal search](https://github.com/argrecsys/decide-madrid-chatbot/blob/main/images/chatbotbasico.gif)
+### On argumented search:
+![Arguments search](https://github.com/argrecsys/decide-madrid-chatbot/blob/main/images/chatbotargs.gif)
 ## Solution
-This repository contains the [fulfillment](https://cloud.google.com/dialogflow/es/docs/fulfillment-overview) section described in the article (TODO: PAPER). This is, therefore, Flask Server source code ready to be installed in a Heroku server. It accepts [Webhook](https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook?hl=es-419) petitions (JSON formatted POST requests with specific contents) at https://chatbot-tfg-server.herokuapp.com/webhook.
+This repository contains the [fulfillment](https://cloud.google.com/dialogflow/es/docs/fulfillment-overview) section described in the article "_A Conversational Agent for Argument-driven E-participation_", used for the [(DGO 2022) 23st Annual International Conference on Digital Government Research
+Theme: Intelligent Technologies, Governments and Citizens](https://dgsociety.org/dgo-2022/). This is, therefore, Flask Server source code ready to be installed in a Heroku server. It accepts [Webhook](https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook?hl=es-419) petitions (JSON formatted POST requests with specific contents) at https://chatbot-tfg-server.herokuapp.com/webhook.
 
 Interaction to this server is automatically managed by a [DialogFlow ES](https://cloud.google.com/dialogflow/es/docs) conversational agent. Then, an integration via Telegram is used to simplify user access to the chatbot, which can be accessed via this Telegram user link: [https://t.me/chat_tfg_coll_bot](https://t.me/chat_tfg_coll_bot)
 ## Resources
 This project uses arguments extracted in this [repository](https://github.com/argrecsys/arg-miner) by  <a href="https://github.com/ansegura7" target="_blank">Andrés Segura-Tinoco</a> in this organization.
 
 ## Deployment - Results
-For the experiment at (TODO: PAPER), two populations where considered: one with and one without facilities to gather arguments from the proposals or comments.
+For the experiment, two populations where considered: one with and one without facilities to gather arguments from the proposals or comments.
 This separation is considered in this version of the chatbot. The solution to gather these two populations was taking Telegram's permanent `chat_id` of each user as a key for each user. Each new `chat_id` (each new user interacting with the chatbot) is either asigned a version with arguments or without arguments if the last user had no arguments and viceversa, respectively and that characteristic is annotated in the following interaction "logs", which allowed the experiments to be analyzed. [Logs can be seen with this Heroku link](https://data.heroku.com/dataclips/igegnagpokdriykszurgvflxivvy)
 
 ## Server structure and architecture
