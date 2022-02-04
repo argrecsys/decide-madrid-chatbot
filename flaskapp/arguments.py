@@ -60,8 +60,8 @@ def detalle_argumento(a: NodeData,  p: Proposals, c: ProposalComments = None, si
             a.linkertext
         ),
         #"{}".format("Y se habla de estas _entidades_ (objetos a los que se refiere el autor en su argumento):\n   {}".format(yaml.dump({e[0]:e[1] for e in a.entities}, allow_unicode=True, indent=4) if  len(a.entities or ()) > 0 else "") if  len(a.entities or ()) > 0 else "No se detectaron _entidades_ (objetos a los que se refiere el autor en su argumento)" ) ,
-        "El _comentario base_ (del que se extrajo el argumento) tiene *{} votos*{}".format(c.numvotes, ", de los cuales:\n   -{} {}👍\n   -{} {}👎\n".format(c.numpositivevotes, ("es voto positivo" if c.numpositivevotes == 1 else "son votos positivos",
-                                                                                                                                                                                c.numnegativevotes, "es voto negativo" if c.numnegativevotes == 1 else "son votos negativos") if c is not None else "La propuesta tenía {} apoyos y {} comentarios".format(p.numsupports, p.numcomments)) if c.numvotes > 0 else "")
+        "El _comentario base_ (del que se extrajo el argumento) tiene *{} votos*{}".format(c.numvotes, ", de los cuales:\n   -{} {}👍\n   -{} {}👎\n".format(c.numpositivevotes, "es voto positivo" if c.numpositivevotes == 1 else "son votos positivos",
+                                                                                                                                                                                c.numnegativevotes, "es voto negativo" if c.numnegativevotes == 1 else "son votos negativos") if c.numvotes > 0 else "" ) if c is not None else "La _propuesta_ (de la que se extrajo el argumento) tenía {} apoyos y {} comentarios".format(p.numsupports, p.numcomments)
     )
     return DFresponse(res, botones=[
         [

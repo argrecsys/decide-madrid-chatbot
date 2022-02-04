@@ -4,7 +4,11 @@
 ![license](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
 
 Chatbot of the [Decide Madrid](https://decide.madrid.es/) 2019 system. This version was used in the [DGO.2022 conference](https://dgsociety.org/dgo-2022/).
-
+## Running examples
+### On proposal searching and comments:
+![Help and proposal search](https://github.com/argrecsys/decide-madrid-chatbot/blob/main/images/chatbotbasico.gif)
+### On argumented search:
+![Arguments search](https://github.com/argrecsys/decide-madrid-chatbot/blob/main/images/chatbotargs.gif)
 ## Solution
 This repository contains the [fulfillment](https://cloud.google.com/dialogflow/es/docs/fulfillment-overview) section described in the article "_A Conversational Agent for Argument-driven E-participation_", used for the [(DGO 2022) 23st Annual International Conference on Digital Government Research
 Theme: Intelligent Technologies, Governments and Citizens](https://dgsociety.org/dgo-2022/). This is, therefore, Flask Server source code ready to be installed in a Heroku server. It accepts [Webhook](https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook?hl=es-419) petitions (JSON formatted POST requests with specific contents) at https://chatbot-tfg-server.herokuapp.com/webhook.
