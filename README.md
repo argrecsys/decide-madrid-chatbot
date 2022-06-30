@@ -1,6 +1,6 @@
 # Decide madrid 2019 Chatbot
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
-![last-update](https://img.shields.io/badge/last_update-11/01/2022-orange)
+![last-update](https://img.shields.io/badge/last_update-06/23/2022-orange)
 ![license](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
 
 Chatbot of the [Decide Madrid](https://decide.madrid.es/) 2019 system. This version was used in the [DGO.2022 conference](https://dgsociety.org/dgo-2022/).
